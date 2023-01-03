@@ -1,0 +1,137 @@
+subfooter
+   .subfooter 
+      .subfooter-container 
+         ul 
+            li.collapse-panel(data-module='collapse' data-module-breakpoints='mobile')
+               input#callText(hidden='' value='Call')
+               .collapse-panel__container
+                  .collapse-panel__header
+                     .button.is-fullwidth.has-text-left
+                        span.button__wrapper(data-test='lblSubfooterLink_CONTACTANADVISORTitle')
+                        | CONTACT AN ADVISOR
+                        span.collapse-panel__close(data-test='btnChevron')
+                  .collapse-panel__content.js-collapse-content(data-test='lblIncitationText_Newsletter')
+                     .collapse-panel__description
+                        p.decrip(data-test='lblContent_Spk_0') CHANEL Customer Care is available Monday to Sunday, 7 AM to 12 AM ET. to answer all your questions.
+                        br
+                        p(data-test='lblContent_Spk_1') Please 
+                           a
+                              span
+                                 u email us
+                           | , call 
+                           a
+                              span
+                                 u 1.800.550.0005
+                           |  or 
+                           a.js-open-chat.subfooter-link
+                              u live chat
+                           |  with a CHANEL Advisor.
+                           p(data-test='lblContent_Spk_2')
+                           br
+                     div.contact
+                        u Chat
+                        u Email
+                        u Call
+            li.collapse-panel(data-test='secFindStoreLocator' data-module='collapse' data-module-breakpoints='mobile')
+               div
+                  .collapse-panel__header
+                     .button.is-fullwidth.has-text-left.collapse-panel__button
+                        span.button__wrapper
+                        | FIND A STORE
+                        span.collapse-panel__close(data-test='btnChevron')
+                  .collapse-panel__content.js-collapse-content(data-test='lblIncitationText_Newsletter')
+                     p#storeloc-description(data-test='lblsubfooterContent_FindAStore') Enter a location to find the closest CHANEL stores
+                     .collapse-panel__inputs
+                        .storelocator-container
+                           form#form_findStoreComponent.control.has-submit.js-store-locator
+                              .field.visible-submit
+                                 .label-input.js-label-input.has-icon.is-ready
+                                    .label-input__label Search by town or zipcode
+                                    button.button.fa-solid.fa-magnifying-glass    
+                                 input#input_findStoreComponent.label-input__input.js-store-input-field
+                              div.line
+                              i.fa.fa-compass
+            li.collapse-panel.is-active(data-module='collapse' data-module-breakpoints='mobile')
+               .js-subscribe
+                  .collapse-panel__header
+                     .button.is-fullwidth.has-text-left.collapse-panel__button.js-collapse-button(data-test='lblSubfooterLink')
+                        span.button__wrapper(data-test='lblSubfooterLink_NEWSLETTERTitle')
+                        | NEWSLETTER
+                        span.collapse-panel__close(data-test='btnChevronNewsletter')
+                  .collapse-panel__content.js-collapse-content(data-test='lblIncitationText_Newsletter')
+                     p#newsletter_description_US_US_Newsletter Subscribe to receive news from CHANEL
+                     .collapse-panel__inputs.storelocator-container
+                        form#newsletter.control.has-submit(novalidate='' name='newsletter_US_US_Newsletter' method='post' action='/us/newsletter/subscribe' data-test='lblSubfooterContent_NewsLetter')
+                           .field.visible-submit
+                              .label-input.js-label-input.has-icon.is-ready
+                                 .js-custom-error.subfooter-custom-error
+                                    .label-input__label Enter your email address
+                                    button.button.newsletter-submit-button
+                                    .newsletter-submit-button_eu OK
+                                    i.fa.fa-angle-right
+                              input#input_findStoreComponent.label-input__input.js-store-input-field
+chat#chat                 
+   .chat 
+      a
+         img(src="https://cdn-icons-png.flaticon.com/512/1380/1380370.png", alt="") 
+         
+
+footer#footer
+   .section 
+      .container 
+         .top-footer 
+            b CHANEL   
+         .row      
+            .col-md-3.col-xs-6
+               .footer  
+                  h3.footer-title EXPLORE CHANEL.COM
+                  p.Chanel 
+                     ul.footer-links 
+                        include ../../mixin/mixin-footer-explore.pug
+            .col-md-3.col-xs-6
+               .footer  
+                  h3.footer-title ONLINE SERVICES
+                  p.Chanel 
+                     ul.footer-links
+                        include ../../mixin/mixin-footer-service.pug
+            .col-md-3.col-xs-6
+               .footer  
+                  h3.footer-title BOUTIQUE SERVICES
+                  p.Chanel 
+                     ul.footer-links
+                        include ../../mixin/mixin-footer-boutique.pug
+            .col-md-3.col-xs-6
+               .footer  
+                  h3.footer-title THE HOUSE OF CHANEL 
+                  p.Chanel 
+                     ul.footer-links
+                        include ../../mixin/mixin-footer-house.pug
+      .col-24(role='listitem')
+         button.enable-high-contrast.hcm-button(data-event-category='footer')
+            span.hcmButtonLabel Enable high contrast
+            span.hcmToggle(aria-hidden='true')
+      .footerLast__container      
+         .footer__language
+            .control.is-horizontal 
+               .control-label 
+                  p.heading.is-7.change-language-label Change location and language 
+               .control 
+                  button.change-localization United Stated - English (US)
+            .footer__end-links.is-light(role="listitem")
+               ul.links-list
+                  li
+                     a
+                        svg.img-social.js-datalayer
+                           image(x="0" y="0" height="100%" width="100%" href="./images/174855.png")
+                  li 
+                     a
+                        svg.img-social.js-datalayer
+                           image(x="0" y="0" height="100%" width="100%" href="./images/124010.png")
+                  li 
+                     a
+                        svg.img-social.js-datalayer 
+                           image(x="0" y="0" height="100%" width="100%" href="./images/124021.png")
+                  li 
+                     a
+                        svg.img-social.js-datalayer 
+                           image(x="0" y="0" height="100%" width="100%" href="./images/1384060.png")
