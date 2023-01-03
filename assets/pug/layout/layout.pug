@@ -7,11 +7,12 @@ html(lang="en")
         title CHANEL
         link(href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700", rel="stylesheet")
         link(rel="stylesheet", href="./main.css")
-        script(src="./js/main.js") 
         script(src="https://kit.fontawesome.com/5642df5137.js", crossorigin="anonymous") 
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js")
     body
         //-Header
+    block script 
+        include ./general/script
     block header
         include ./general/header
     block main
